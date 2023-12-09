@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Silence is golden</h1>
+        <pre style="white-space: pre-wrap;"></pre>
+        <script>
+            const pre = document.querySelector('pre')
+            fetch('/.netlify/functions/example')
+            .then(e => e.json())
+            .then(e => {
+                    // Log and show API results, just for the starter
+                    console.log(e);
+                    pre.innerText = JSON.stringify(e)
+                }
+            )
+        </script>
+    </body>
+</html>
+

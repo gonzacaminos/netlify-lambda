@@ -1,0 +1,27 @@
+{
+  "name": "netlify-lambda",
+  "author": {
+    "name": "gonzacaminos"
+  },
+  "private": true,
+  "description": "Simple starter for Netlify apps only using serverless functions",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "prebuild": "cd ./netlify/functions && npm install",
+    "start": "yarn prebuild && netlify dev"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^15.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gonzacaminos/gatss-wind"
+  },
+  "bugs": {
+    "url": "https://github.com/gonzacaminos/gatss-wind/issues"
+  }
+}
